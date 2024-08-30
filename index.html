@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Display</title>
+    <title>Fullscreen Image</title>
     <style>
-        body {
+        html, body {
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
         }
         img {
-            max-width: 100%;
-            height: auto;
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <img src="catbleh.jpg" alt="Image">
+    <img src="catbleh.jpg" alt="Fullscreen Image">
 </body>
 </html>
